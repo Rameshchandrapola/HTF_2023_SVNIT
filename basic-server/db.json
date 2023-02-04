@@ -27,5 +27,44 @@
         "Kuch bhi"
       ]
     }
-  ]
+  ],
+  "events": {
+    "acm": {
+      "title": "Dotslash 6.0",
+      "description": "Hack this Fall 3.0 jaisa hackathon SVNIT mai aa rha hain.",
+      "organizers": [
+        "ASHINE",
+        "Polygon",
+        "Devfolio"
+      ],
+      "target_budget": 200
+    },
+    "gdsc": {
+      "title": "Design Day",
+      "description": "Design karne wala event jisme development nahi hogi.",
+      "organizers": [
+        "GDSC",
+        "DSC-G"
+      ],
+      "target_budget": 100
+    },
+    "ncc": {
+      "title": "Republic Day",
+      "description": "Parade karayenge",
+      "organizers": [
+        "NCC",
+        "Police"
+      ],
+      "target_budget": 200
+    },
+    "iete": {
+      "title": "Circuit Day",
+      "description": "Indian Semiconductor Revolution",
+      "organizers": [
+        "IEEE",
+        "ISF"
+      ],
+      "target_budget": 900
+    }
+  }
 }
