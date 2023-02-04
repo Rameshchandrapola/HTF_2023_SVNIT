@@ -1,35 +1,7 @@
-import Layout from '../components/Layout';
-import {
-    useStoryblokState,
-    getStoryblokApi,
-    StoryblokComponent,
-} from '@storyblok/react';
-
-export default function Home({ story }) {
-    story = useStoryblokState(story);
+export default function Home() {
+    
 
     return (
-        <Layout>
-            <StoryblokComponent blok={story.content} />
-        </Layout>
+       <h1>Hello</h1>
     );
-}
-
-export async function getStaticProps() {
-    // the slug of the story
-    let slug = 'home';
-
-    let params = {
-        version: 'published', // or 'published'
-    };
-
-    const storyblokApi = getStoryblokApi();
-    let { data } = await storyblokApi.get(`cdn/stories/${slug}`, params);
-
-    return {
-        props: {
-            story: data ? data.story : false,
-            key: data ? data.story.id : false,
-        },
-    };
 }
