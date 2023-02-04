@@ -25,7 +25,11 @@ contract Owner {
   /* This is the constructor which will be called once when you
   deploy the contract to the blockchain. When we deploy the contract,
   we will pass an array of _events who will be contesting in the election
-  */
+  */ 
+
+  function transferEther(address payable recipient) public payable{
+        recipient.transfer(msg.value);
+    }
   function Voting (string[] memory eventNames) public {
     eventList = eventNames;
   }
