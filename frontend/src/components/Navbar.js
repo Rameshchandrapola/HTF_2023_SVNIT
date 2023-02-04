@@ -6,8 +6,18 @@ const Navbar = ({ acc, setAcc }) => {
   // STATES
   const [catId, setCatId] = useState(null);
   const [data, setData] = useState([]);
+  const [evData, setEvData] = useState([]);
+  const [event, setEvent] = useState(null);
+  const [able, setAble] = useState([
+    {
+      cat_id: null,
+      visited: [],
+      votable: false,
+    },
+  ]);
 
   // HANDLERS
+
   let connectHandler = async () => {
     let accs = await window.ethereum.request({ method: "eth_requestAccounts" });
     let account = ethers.utils.getAddress(accs[0]);
@@ -20,10 +30,26 @@ const Navbar = ({ acc, setAcc }) => {
 
   // use effect
   useEffect(() => {
+    const ables = [];
+    data.map((d) => {
+      ables.push({
+        cat_id: d.id,
+        visitedAll: 0,
+        votable: false,
+      });
+    });
+    setAble(ables);
+  }, [data]);
+
+  useEffect(() => {
     const fetchData = async () => {
       const result = await fetch("http://localhost:4000/catagorie");
+      const evResult = await fetch("http://localhost:4000/events");
       const json = await result.json();
+      const evJson = await evResult.json();
+      // adde
       setData(json);
+      setEvData(evJson);
     };
     fetchData();
   }, []);
@@ -34,7 +60,7 @@ const Navbar = ({ acc, setAcc }) => {
         <div className="nav_title">
           <h1>SCDAO</h1>
         </div>
-        <input type="text" className="nav_search"></input>
+        {/* <input type="text" className="nav_search"></input> */}
         {/* 
         here it means that if the account is not connected then connect it
         by showing the connect button or if its connected then simply
@@ -72,7 +98,12 @@ const Navbar = ({ acc, setAcc }) => {
               <div className="clubs-card-container">
                 {d.clubs.map((cl) => {
                   return (
-                    <div className="clubs-card">
+                    <div
+                      onClick={() => {
+                        setEvent(cl);
+                      }}
+                      className="clubs-card"
+                    >
                       <div className="clubs-card-header">
                         <h3>{cl}</h3>
                       </div>
@@ -87,6 +118,33 @@ const Navbar = ({ acc, setAcc }) => {
           }
         })
       )}
+      {event != null
+        ? Object.keys(evData).map((e) => {
+            // console.log(event.toLowerCase());
+            if (e === event.toLowerCase()) {
+              return (
+                <div className="event-card">
+                  <div className="event-card-header">
+                    <h3>{evData[e].title}</h3>
+                  </div>
+                  <div className="event-card-body">
+                    <p>{evData[e].description}</p>
+                  </div>
+                </div>
+              );
+            }
+          })
+        : null}
+      {event != null ? (
+        <button
+          onClick={() => {
+            setEvent(null);
+            setCatId(null);
+          }}
+        >
+          Back
+        </button>
+      ) : null}
     </div>
   );
 };

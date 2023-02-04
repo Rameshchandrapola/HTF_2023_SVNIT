@@ -11,20 +11,27 @@
   align-items: center;
 }
 
-.clubs-card {
+.clubs-card,
+.event-card {
   width: 30%;
-  height: 300px;
+  height: 100px;
   background-color: lightgray;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
 }
 
+.event-card {
+  width: 90vw;
+  margin: auto;
+  min-height: 20rem;
+}
+
 .clubs-card-header {
   background-color: darkgray;
   color: white;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -34,7 +41,7 @@
 }
 
 .clubs-card-body {
-  padding: 20px;
+  padding: 5px;
 }
 
 .clubs-card-body p {
