@@ -1,0 +1,31 @@
+{
+  "catagorie": [
+    {
+      "title": "Technical",
+      "id": "tech",
+      "clubs": [
+        "ACM",
+        "GDSC",
+        "CEV"
+      ]
+    },
+    {
+      "title": "Academics",
+      "id": "acad",
+      "clubs": [
+        "IETE",
+        "EES",
+        "Ches"
+      ]
+    },
+    {
+      "title": "Sports",
+      "id": "sport",
+      "clubs": [
+        "NCC",
+        "NSS",
+        "Kuch bhi"
+      ]
+    }
+  ]
+}

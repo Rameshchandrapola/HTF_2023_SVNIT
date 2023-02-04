@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity >=0.4.22 <0.9.0;
 
 contract Lock {
     string category;
@@ -19,35 +19,18 @@ contract Lock {
 
     //we use no=>Struct object for the mapping of the structure that we create for the project
 
-    //all the functions for the this application that will be used
-    // mapping(string=>uint256) cat_budget = {
-    //     'technical' =
-    // };
 
     string public name;
     //just like the metamask or ethereum address
     address public owner;
 
-    //ACM -> Amount
-    // mapping(string=>uint256) cat_budget;
-
-    // modifier onlyBudget(string _name){
-    //         require(msg.value <= cat_budget[Club[_name][]]);
-    //         _;
-    //     }
-    // uint256 public noOfClubs = 0;
 
     modifier onlyOrganizer() {
         require(msg.sender == organizer);
         _;
     }
-    // mapping(string => mapping(uint256 => Club[])) club;
     mapping(string => Club[]) club;
 
-    //function allotBudget(uint256 _budget, uint256 _id) public onlyOrganizer{
-    //    cat_budget[categories[_id]] = _budget;
-    //}
-    //this function should return the id of the specific Club
     function createClub(
         string memory _name, //this is the category
         address _owner,
@@ -60,12 +43,9 @@ contract Lock {
         //we give _(name_of_parameter) to separate the parameter only to this function
 
         //here we are creating an instance of the mapping of the particular Club
-        //clubs -> dictionary of clubs based on the id -> eg) Club[3];
-        // Club storage Club=club[_name][club[_name].length]; //creating the array of club
         //also being the storage, so directly the original data will be modified and not the separate copy of it
 
         //now putting a check that if the Club that is being created is having the correct deadline or not
-        // require(Club.deadline < block.timestamp, "Deadline should be of future");
 
         //if the require statement is true, then only it will proceed futher down here, else not.
         // club[_name][club[_name].length].owner = _owner;
