@@ -1,0 +1,76 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/[...slug]";
+exports.ids = ["pages/[...slug]"];
+exports.modules = {
+
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nconst Layout = ({ children  })=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"max-w-5xl p-10 mx-auto\",\n            children: children\n        }, void 0, false, {\n            fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/components/Layout.js\",\n            lineNumber: 3,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/components/Layout.js\",\n        lineNumber: 2,\n        columnNumber: 5\n    }, undefined);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL0xheW91dC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTtBQUFBLE1BQU1BLE1BQU0sR0FBRyxDQUFDLEVBQUVDLFFBQVEsR0FBRSxpQkFDeEIsOERBQUNDLEtBQUc7a0JBQ0YsNEVBQUNBLEtBQUc7WUFBQ0MsU0FBUyxFQUFDLHdCQUF3QjtzQkFBRUYsUUFBUTs7Ozs7cUJBQU87Ozs7O2lCQUNwRDtBQUdSLGlFQUFlRCxNQUFNLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9Ac3RvcnlibG9rL3JlYWN0LW5leHQtZGVtby8uL2NvbXBvbmVudHMvTGF5b3V0LmpzPzUxNWMiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgTGF5b3V0ID0gKHsgY2hpbGRyZW4gfSkgPT4gKFxuICAgIDxkaXY+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LTV4bCBwLTEwIG14LWF1dG9cIj57Y2hpbGRyZW59PC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG4gIFxuICBleHBvcnQgZGVmYXVsdCBMYXlvdXQ7Il0sIm5hbWVzIjpbIkxheW91dCIsImNoaWxkcmVuIiwiZGl2IiwiY2xhc3NOYW1lIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/Layout.js\n");
+
+/***/ }),
+
+/***/ "./pages/[...slug].js":
+/*!****************************!*\
+  !*** ./pages/[...slug].js ***!
+  \****************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Page),\n/* harmony export */   \"getStaticPaths\": () => (/* binding */ getStaticPaths),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ \"./components/Layout.js\");\n/* harmony import */ var _storyblok_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @storyblok/react */ \"@storyblok/react\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_storyblok_react__WEBPACK_IMPORTED_MODULE_3__]);\n_storyblok_react__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\nfunction Page({ story  }) {\n    story = (0,_storyblok_react__WEBPACK_IMPORTED_MODULE_3__.useStoryblokState)(story);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                        children: story ? story.name : \"My Site\"\n                    }, void 0, false, {\n                        fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/pages/[...slug].js\",\n                        lineNumber: 16,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                        rel: \"icon\",\n                        href: \"/favicon.ico\"\n                    }, void 0, false, {\n                        fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/pages/[...slug].js\",\n                        lineNumber: 17,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/pages/[...slug].js\",\n                lineNumber: 15,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Layout__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_storyblok_react__WEBPACK_IMPORTED_MODULE_3__.StoryblokComponent, {\n                    blok: story.content\n                }, void 0, false, {\n                    fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/pages/[...slug].js\",\n                    lineNumber: 20,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/pages/[...slug].js\",\n                lineNumber: 19,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/home/harshil/Desktop/htf_2023_proj/frontend/pages/[...slug].js\",\n        lineNumber: 14,\n        columnNumber: 5\n    }, this);\n}\nasync function getStaticProps({ params  }) {\n    let slug = params.slug ? params.slug.join(\"/\") : \"home\";\n    let sbParams = {\n        version: \"draft\"\n    };\n    const storyblokApi = (0,_storyblok_react__WEBPACK_IMPORTED_MODULE_3__.getStoryblokApi)();\n    let { data  } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);\n    return {\n        props: {\n            story: data ? data.story : false,\n            key: data ? data.story.id : false\n        },\n        revalidate: 3600\n    };\n}\nasync function getStaticPaths() {\n    const storyblokApi = (0,_storyblok_react__WEBPACK_IMPORTED_MODULE_3__.getStoryblokApi)();\n    let { data  } = await storyblokApi.get(\"cdn/links/\", {\n        version: \"draft\"\n    });\n    let paths = [];\n    Object.keys(data.links).forEach((linkKey)=>{\n        if (data.links[linkKey].is_folder || data.links[linkKey].slug === \"home\") {\n            return;\n        }\n        const slug = data.links[linkKey].slug;\n        let splittedSlug = slug.split(\"/\");\n        paths.push({\n            params: {\n                slug: splittedSlug\n            }\n        });\n    });\n    return {\n        paths: paths,\n        fallback: false\n    };\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9bLi4uc2x1Z10uanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFBNkI7QUFDYTtBQU1oQjtBQUVYLFNBQVNLLElBQUksQ0FBQyxFQUFFQyxLQUFLLEdBQUUsRUFBRTtJQUN0Q0EsS0FBSyxHQUFHSixtRUFBaUIsQ0FBQ0ksS0FBSyxDQUFDLENBQUM7SUFFakMscUJBQ0UsOERBQUNDLEtBQUc7OzBCQUNGLDhEQUFDUCxrREFBSTs7a0NBQ0gsOERBQUNRLE9BQUs7a0NBQUVGLEtBQUssR0FBR0EsS0FBSyxDQUFDRyxJQUFJLEdBQUcsU0FBUzs7Ozs7NEJBQVM7a0NBQy9DLDhEQUFDQyxNQUFJO3dCQUFDQyxHQUFHLEVBQUMsTUFBTTt3QkFBQ0MsSUFBSSxFQUFDLGNBQWM7Ozs7OzRCQUFHOzs7Ozs7b0JBQ2xDOzBCQUNQLDhEQUFDWCwwREFBTTswQkFDTCw0RUFBQ0csZ0VBQWtCO29CQUFDUyxJQUFJLEVBQUVQLEtBQUssQ0FBQ1EsT0FBTzs7Ozs7d0JBQUk7Ozs7O29CQUNwQzs7Ozs7O1lBQ0wsQ0FDTjtBQUNKLENBQUM7QUFFTSxlQUFlQyxjQUFjLENBQUMsRUFBRUMsTUFBTSxHQUFFLEVBQUU7SUFDL0MsSUFBSUMsSUFBSSxHQUFHRCxNQUFNLENBQUNDLElBQUksR0FBR0QsTUFBTSxDQUFDQyxJQUFJLENBQUNDLElBQUksQ0FBQyxHQUFHLENBQUMsR0FBRyxNQUFNO0lBRXZELElBQUlDLFFBQVEsR0FBRztRQUNiQyxPQUFPLEVBQUUsT0FBTztLQUNqQjtJQUVELE1BQU1DLFlBQVksR0FBR2xCLGlFQUFlLEVBQUU7SUFDdEMsSUFBSSxFQUFFbUIsSUFBSSxHQUFFLEdBQUcsTUFBTUQsWUFBWSxDQUFDRSxHQUFHLENBQUMsQ0FBQyxZQUFZLEVBQUVOLElBQUksQ0FBQyxDQUFDLEVBQUVFLFFBQVEsQ0FBQztJQUV0RSxPQUFPO1FBQ0xLLEtBQUssRUFBRTtZQUNMbEIsS0FBSyxFQUFFZ0IsSUFBSSxHQUFHQSxJQUFJLENBQUNoQixLQUFLLEdBQUcsS0FBSztZQUNoQ21CLEdBQUcsRUFBRUgsSUFBSSxHQUFHQSxJQUFJLENBQUNoQixLQUFLLENBQUNvQixFQUFFLEdBQUcsS0FBSztTQUNsQztRQUNEQyxVQUFVLEVBQUUsSUFBSTtLQUNqQixDQUFDO0FBQ0osQ0FBQztBQUVNLGVBQWVDLGNBQWMsR0FBRztJQUNyQyxNQUFNUCxZQUFZLEdBQUdsQixpRUFBZSxFQUFFO0lBQ3RDLElBQUksRUFBRW1CLElBQUksR0FBRSxHQUFHLE1BQU1ELFlBQVksQ0FBQ0UsR0FBRyxDQUFDLFlBQVksRUFBRTtRQUNsREgsT0FBTyxFQUFFLE9BQU87S0FDakIsQ0FBQztJQUVGLElBQUlTLEtBQUssR0FBRyxFQUFFO0lBQ2RDLE1BQU0sQ0FBQ0MsSUFBSSxDQUFDVCxJQUFJLENBQUNVLEtBQUssQ0FBQyxDQUFDQyxPQUFPLENBQUMsQ0FBQ0MsT0FBTyxHQUFLO1FBQzNDLElBQUlaLElBQUksQ0FBQ1UsS0FBSyxDQUFDRSxPQUFPLENBQUMsQ0FBQ0MsU0FBUyxJQUFJYixJQUFJLENBQUNVLEtBQUssQ0FBQ0UsT0FBTyxDQUFDLENBQUNqQixJQUFJLEtBQUssTUFBTSxFQUFFO1lBQ3hFLE9BQU87UUFDVCxDQUFDO1FBRUQsTUFBTUEsSUFBSSxHQUFHSyxJQUFJLENBQUNVLEtBQUssQ0FBQ0UsT0FBTyxDQUFDLENBQUNqQixJQUFJO1FBQ3JDLElBQUltQixZQUFZLEdBQUduQixJQUFJLENBQUNvQixLQUFLLENBQUMsR0FBRyxDQUFDO1FBRWxDUixLQUFLLENBQUNTLElBQUksQ0FBQztZQUFFdEIsTUFBTSxFQUFFO2dCQUFFQyxJQUFJLEVBQUVtQixZQUFZO2FBQUU7U0FBRSxDQUFDLENBQUM7SUFDakQsQ0FBQyxDQUFDLENBQUM7SUFFSCxPQUFPO1FBQ0xQLEtBQUssRUFBRUEsS0FBSztRQUNaVSxRQUFRLEVBQUUsS0FBSztLQUNoQixDQUFDO0FBQ0osQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL0BzdG9yeWJsb2svcmVhY3QtbmV4dC1kZW1vLy4vcGFnZXMvWy4uLnNsdWddLmpzP2E2MWMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IExheW91dCBmcm9tIFwiLi4vY29tcG9uZW50cy9MYXlvdXRcIjtcbiBcbmltcG9ydCB7XG4gIHVzZVN0b3J5Ymxva1N0YXRlLFxuICBnZXRTdG9yeWJsb2tBcGksXG4gIFN0b3J5Ymxva0NvbXBvbmVudCxcbn0gZnJvbSBcIkBzdG9yeWJsb2svcmVhY3RcIjtcbiBcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFBhZ2UoeyBzdG9yeSB9KSB7XG4gIHN0b3J5ID0gdXNlU3RvcnlibG9rU3RhdGUoc3RvcnkpO1xuIFxuICByZXR1cm4gKFxuICAgIDxkaXYgPlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT57c3RvcnkgPyBzdG9yeS5uYW1lIDogXCJNeSBTaXRlXCJ9PC90aXRsZT5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIGhyZWY9XCIvZmF2aWNvbi5pY29cIiAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPExheW91dD5cbiAgICAgICAgPFN0b3J5Ymxva0NvbXBvbmVudCBibG9rPXtzdG9yeS5jb250ZW50fSAvPlxuICAgICAgPC9MYXlvdXQ+XG4gICAgPC9kaXY+XG4gICk7XG59XG4gXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3RhdGljUHJvcHMoeyBwYXJhbXMgfSkge1xuICBsZXQgc2x1ZyA9IHBhcmFtcy5zbHVnID8gcGFyYW1zLnNsdWcuam9pbihcIi9cIikgOiBcImhvbWVcIjtcbiBcbiAgbGV0IHNiUGFyYW1zID0ge1xuICAgIHZlcnNpb246IFwiZHJhZnRcIiwgLy8gb3IgJ3B1Ymxpc2hlZCdcbiAgfTtcbiBcbiAgY29uc3Qgc3RvcnlibG9rQXBpID0gZ2V0U3RvcnlibG9rQXBpKCk7XG4gIGxldCB7IGRhdGEgfSA9IGF3YWl0IHN0b3J5Ymxva0FwaS5nZXQoYGNkbi9zdG9yaWVzLyR7c2x1Z31gLCBzYlBhcmFtcyk7XG4gXG4gIHJldHVybiB7XG4gICAgcHJvcHM6IHtcbiAgICAgIHN0b3J5OiBkYXRhID8gZGF0YS5zdG9yeSA6IGZhbHNlLFxuICAgICAga2V5OiBkYXRhID8gZGF0YS5zdG9yeS5pZCA6IGZhbHNlLFxuICAgIH0sXG4gICAgcmV2YWxpZGF0ZTogMzYwMCxcbiAgfTtcbn1cbiBcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTdGF0aWNQYXRocygpIHtcbiAgY29uc3Qgc3RvcnlibG9rQXBpID0gZ2V0U3RvcnlibG9rQXBpKCk7XG4gIGxldCB7IGRhdGEgfSA9IGF3YWl0IHN0b3J5Ymxva0FwaS5nZXQoXCJjZG4vbGlua3MvXCIgLHtcbiAgICB2ZXJzaW9uOiAnZHJhZnQnXG4gIH0pO1xuIFxuICBsZXQgcGF0aHMgPSBbXTtcbiAgT2JqZWN0LmtleXMoZGF0YS5saW5rcykuZm9yRWFjaCgobGlua0tleSkgPT4ge1xuICAgIGlmIChkYXRhLmxpbmtzW2xpbmtLZXldLmlzX2ZvbGRlciB8fCBkYXRhLmxpbmtzW2xpbmtLZXldLnNsdWcgPT09IFwiaG9tZVwiKSB7XG4gICAgICByZXR1cm47XG4gICAgfVxuIFxuICAgIGNvbnN0IHNsdWcgPSBkYXRhLmxpbmtzW2xpbmtLZXldLnNsdWc7XG4gICAgbGV0IHNwbGl0dGVkU2x1ZyA9IHNsdWcuc3BsaXQoXCIvXCIpO1xuIFxuICAgIHBhdGhzLnB1c2goeyBwYXJhbXM6IHsgc2x1Zzogc3BsaXR0ZWRTbHVnIH0gfSk7XG4gIH0pO1xuIFxuICByZXR1cm4ge1xuICAgIHBhdGhzOiBwYXRocyxcbiAgICBmYWxsYmFjazogZmFsc2UsXG4gIH07XG59Il0sIm5hbWVzIjpbIkhlYWQiLCJMYXlvdXQiLCJ1c2VTdG9yeWJsb2tTdGF0ZSIsImdldFN0b3J5Ymxva0FwaSIsIlN0b3J5Ymxva0NvbXBvbmVudCIsIlBhZ2UiLCJzdG9yeSIsImRpdiIsInRpdGxlIiwibmFtZSIsImxpbmsiLCJyZWwiLCJocmVmIiwiYmxvayIsImNvbnRlbnQiLCJnZXRTdGF0aWNQcm9wcyIsInBhcmFtcyIsInNsdWciLCJqb2luIiwic2JQYXJhbXMiLCJ2ZXJzaW9uIiwic3RvcnlibG9rQXBpIiwiZGF0YSIsImdldCIsInByb3BzIiwia2V5IiwiaWQiLCJyZXZhbGlkYXRlIiwiZ2V0U3RhdGljUGF0aHMiLCJwYXRocyIsIk9iamVjdCIsImtleXMiLCJsaW5rcyIsImZvckVhY2giLCJsaW5rS2V5IiwiaXNfZm9sZGVyIiwic3BsaXR0ZWRTbHVnIiwic3BsaXQiLCJwdXNoIiwiZmFsbGJhY2siXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/[...slug].js\n");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/***/ ((module) => {
+
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "@storyblok/react":
+/*!***********************************!*\
+  !*** external "@storyblok/react" ***!
+  \***********************************/
+/***/ ((module) => {
+
+module.exports = import("@storyblok/react");;
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/[...slug].js"));
+module.exports = __webpack_exports__;
+
+})();

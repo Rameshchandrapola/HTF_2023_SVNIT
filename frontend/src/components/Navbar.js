@@ -1,5 +1,6 @@
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
+import abi from "./../abi/Voting.json";
 // import Chapters from "./Chapters";
 // exoport components
 const Navbar = ({ acc, setAcc }) => {
@@ -53,7 +54,29 @@ const Navbar = ({ acc, setAcc }) => {
     };
     fetchData();
   }, []);
+  // Web3
+    const handleVoteClick = async (event) => {
+      console.log(event);
+      const { ethereum } = window;
+      if (ethereum) {
+        const provider = new ethers.providers.Web3Provider(ethereum);
+        const signer = provider.getSigner();
+        // console.log(abi)
+        try{
+        const voteContract = new ethers.Contract("0x0f989B4A4aE5648aDB776c74F42C9bCcA3DF1009", abi, signer);
+        console.log(voteContract);
+        // await voteContract.Voting([event,"event2"]);
+        await voteContract.voteFor_event(event);
+        const totalNumber = await voteContract.totalVotesFor(event);
+        console.log(totalNumber);
+        }catch{
 
+          console.log("Not Created")
+        }
+        
+        
+      }
+    }
   return (
     <div>
       <div className="main_nav">
@@ -76,7 +99,7 @@ const Navbar = ({ acc, setAcc }) => {
             className="nav_connect"
             onClick={connectHandler}
           >
-            Connect
+            {acc ? acc : "Connect"}
           </button>
         )}
       </div>
@@ -96,7 +119,7 @@ const Navbar = ({ acc, setAcc }) => {
           if (d.id === catId) {
             return (
               <div className="clubs-card-container">
-                {d.clubs.map((cl) => {
+                {d.clubs.map((cl, index) => {
                   return (
                     <div
                       onClick={() => {
@@ -108,7 +131,7 @@ const Navbar = ({ acc, setAcc }) => {
                         <h3>{cl}</h3>
                       </div>
                       <div className="clubs-card-body">
-                        <p>njkvvnfnvjkfd</p>
+                        <p>{"Club Description goes here"}</p>
                       </div>
                     </div>
                   );
@@ -120,20 +143,21 @@ const Navbar = ({ acc, setAcc }) => {
       )}
       {event != null
         ? Object.keys(evData).map((e) => {
-            // console.log(event.toLowerCase());
-            if (e === event.toLowerCase()) {
-              return (
-                <div className="event-card">
-                  <div className="event-card-header">
-                    <h3>{evData[e].title}</h3>
-                  </div>
-                  <div className="event-card-body">
-                    <p>{evData[e].description}</p>
-                  </div>
+          // console.log(event.toLowerCase());
+          if (e === event.toLowerCase()) {
+            return (
+              <div className="event-card">
+                <div className="event-card-header">
+                  <h3>{evData[e].title}</h3>
                 </div>
-              );
-            }
-          })
+                <div className="event-card-body">
+                  <p>{evData[e].description}</p>
+                </div>
+                <button onClick={() => handleVoteClick(evData[e].title)}>Vote</button>
+              </div>
+            );
+          }
+        })
         : null}
       {event != null ? (
         <button
